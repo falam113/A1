@@ -80,7 +80,7 @@ function filterByYear(myList, id) {
     let year2 = document.querySelector(id + "2").value;
     for (let movie of myList) {
       let year = movie.release_date.substring(0, 4);
-      if (year1 < year && year < year2) {
+      if (year1 <= year && year <= year2) {
         movieList.push(movie);
       }
     }
